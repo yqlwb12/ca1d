@@ -2,6 +2,10 @@
 
 [![tests](https://github.com/yqlwb12/ca1d/actions/workflows/ci.yml/badge.svg)](https://github.com/yqlwb12/ca1d/actions/workflows/ci.yml)
 
+> **Experimental project, for reference and learning only.**
+> Published as-is, with no warranty of correctness or fitness for purpose.
+> 本项目仅供参考与实验用途，不保证可靠性；生产使用前请自行充分测试。
+
 **Wolfram's elementary cellular automata, one row at a time.** Rule numbers 0–255, a terminal, no dependencies.
 
 ```console
@@ -97,6 +101,24 @@ $ PYTHONPATH=src python -m unittest discover -s tests -v
 28 tests, no test dependencies. They pin the rule tables (30, 51, 204), the
 Sierpinski gasket that rule 90 must produce, torus wrapping, determinism under a
 seed, and the CLI's argument handling.
+
+## Disclaimer
+
+This repository is a personal experiment, published for reference and learning.
+It is not production software.
+
+- **No warranty.** Provided "as is", without warranty of any kind, exactly as the
+  licence says. Correctness, fitness for purpose and safety are not guaranteed.
+- **Expect changes.** Interfaces, output formats and behaviour may change without
+  notice; the test suite describes what the code does today, not a promise about
+  tomorrow.
+- **Verify before you rely on it.** Read the code, run the tests, and check the
+  results yourself in your own environment.
+
+It is a teaching and exploration tool. A pattern you find here is a property of the rule, not a result to cite without reproducing it.
+
+本项目仅供学习、参考与实验使用，作者不对其可靠性、准确性与适用性作出任何保证。
+在生产环境使用或对外提供服务之前，请自行充分审查代码、评估风险并完成测试。
 
 ## Licence
 
