@@ -1,5 +1,7 @@
 # ca1d
 
+[![tests](https://github.com/yqlwb12/ca1d/actions/workflows/ci.yml/badge.svg)](https://github.com/yqlwb12/ca1d/actions/workflows/ci.yml)
+
 **Wolfram's elementary cellular automata, one row at a time.** Rule numbers 0–255, a terminal, no dependencies.
 
 ```console
