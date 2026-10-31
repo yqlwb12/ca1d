@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ca1d"
+description = "Elementary cellular automata (Wolfram rules 0-255) in your terminal."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "moonterm contributors" }]
+keywords = ["cellular-automata", "wolfram", "rule-30", "terminal", "ascii-art"]
+classifiers = [
+    "Environment :: Console",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Artistic Software",
+    "Topic :: Scientific/Engineering :: Mathematics",
+]
+dynamic = ["version"]
+
+[project.scripts]
+ca1d = "ca1d.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.dynamic]
+version = { attr = "ca1d.__version__" }
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
